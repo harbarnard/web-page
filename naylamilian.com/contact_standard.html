@@ -1,0 +1,294 @@
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Arturo Creative Portfolio</title>
+    <meta name="Description" content="Lorem ipsum doret atem">
+    <meta name="Keywords" content="Lorem, Ipsum, Doret, Atem">
+
+    <link href="css/screen.css" rel="stylesheet" type="text/css">
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/audioplayer.js"></script>
+    
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/Smirnof_400.font.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="js/jsShare.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/spryfunction.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>  
+       
+    <!--google map-->
+    <div id="map_standard"></div>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script>
+		var map;
+		var SPEEDstyle = 
+		[{
+		"featureType": "stylers" [ 
+		{ "visibility": "on" } ] }
+		];
+		function initialize() {
+		var mapOptions = {
+		zoom: 14, <!--google map zoom-->
+		center: new google.maps.LatLng(48.85700, 2.30400), <!--google map poi position-->
+		streetViewControl: true,
+		scrollwheel: true,
+		
+		panControl: true,
+		panControlOptions: {
+        position: google.maps.ControlPosition.RIGHT_CENTER  <!--pan control position-->
+        },
+		
+		zoomControl: true,
+        zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.LARGE,
+        position: google.maps.ControlPosition.RIGHT_CENTER  <!--zoom control position-->
+        },
+		
+		mapTypeControl: false,
+		overviewMapControl: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		map = new google.maps.Map(document.getElementById('map_standard'),
+		mapOptions);
+		var mapType = new google.maps.StyledMapType(SPEEDstyle, { name:"style" });    
+		map.mapTypes.set('SPEED', mapType);
+		map.setMapTypeId('SPEED');
+		var image = 'img/pin.png';
+		
+		var myLatLng = new google.maps.LatLng('48.85551','2.30506'); <!--google map coordinats-->
+		var beachMarker = new google.maps.Marker({
+		position: myLatLng,
+		map: map,
+		icon: image
+		});
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <!--google map-->
+    
+    </head>
+    <body>
+    
+    <!--top slider-->
+    <div id="slideOut">
+    <div id="slideContent">
+     
+    <!--contact form-->
+    <div id="wrapper">
+    <div id="login" class="animate form">
+    <div class="title_message">CONTACT INFORMATION</div>
+
+    <div class="doe">
+    John Doe<br>
+    <img src="img/pen.png"> 1234 Turk Hill Rd, Fairport, NY<br>
+    <img src="img/phone.png"> (585) 222-3311<br>
+    <img src="img/link.png"> <a href="mailto:contact@your-web.com"> contact@your-web.com</a>
+    </div>
+    
+    <form  action="#.php" autocomplete="on">
+    <div class="clear"></div>
+    <p>
+    <label for="username" class="uname" data-icon="u" > Your Name </label>
+    <input id="username" name="username" required="required" type="text" placeholder="John Doe"/>
+    </p>
+    <p>
+    <label for="username" class="uname" data-icon="u" > Your E-Mail </label>
+    <input id="username" name="username" required="required" type="text" placeholder="john@gmail.com"/>
+    </p>
+    <p>
+    <label for="username" class="uname" data-icon="e" > Your Message </label>
+    <textarea name="message" required="required" type="text" placeholder="Message" cols="1" rows="3" class="message"></textarea>
+    </p>
+    <p class="login button">
+    <input type="submit" value=""><!--send button / here nothing-->
+    </p>
+    <p class="change_link">CONTACT US</p>
+    </form>
+    </div>
+    </div>
+    <!--contact form--> 
+    
+    </div>
+    <div id="slideClick"> </div>
+    </div>
+    <!--top slider-->
+    
+    <!--top bar-->
+    <div id="header_line"></div>
+    <!--top bar-->
+    
+    <!--menu-->
+    <div id="pos1">
+    <div id="menu_pos">
+    <div id="home_button">
+    
+    <!--menu step-->
+    <div id="home_link" class="menu"><a href="index.html" target="_top">HOME</a></div>
+    </div>
+    <!--menu step-->
+    
+    <!--logo-->
+    <div id="logo_bg"> <a href="index.html"><img src="img/logo.png" class="displayed"></a>
+    <div id="logo_name">ARTURO</div>
+    </div>
+    <!--logo-->
+    
+    <div id="menu_items">
+    <div id="nav" class="clearfix">
+    <ul id="header_menu" class="menu">
+    
+    <!--menu step-->
+    <li class="menu-expand menu-sibling menu-first"> 
+    <a href="#" target="_top">PAGES<span class="ard"></span></a>
+    <ul/>
+    <!--menu step-->
+    
+    <!--sub menu step--> 
+    <li class="menu-first"> 
+    <a href="about_us.html" target="_top">ABOUT US</a> 
+    </li>
+    <!--sub menu step-->
+    
+    <!--sub menu step--> 
+    <li class="menu-first"> 
+    <a href="team.html" target="_top">TEAM</a> 
+    </li>
+    <!--sub menu step-->
+    
+    <!--sub menu step-->
+    <li class="menu-first"> 
+    <a href="#" target="_top">FEATURES</a> </li>
+    </ul>
+    </li>
+    <!--sub menu step-->
+    
+    <!--sub menu step-->
+    <li class="menu-expand menu-sibling"> 
+    <a href="#" target="_top">GALLERY<span class="ard"></span></a>
+    <ul class="">
+    <!--menu step-->
+    
+    <!--sub menu step--> 
+    <li class="menu-first"> 
+    <a href="gallery_full.html" target="_top">FULL GALLERY</a> 
+    </li>
+    <!--sub menu step-->
+    
+    <!--sub menu step--> 
+    <li class="menu-first"> 
+    <a href="gallery_one.html" target="_top">THUMB GALLERY</a> 
+    </li>
+    <!--sub menu step-->
+    
+    <!--sub menu step--> 
+    <li class=""> 
+    <a href="gallery_slider.html" target="_top">IMAGE/VIDEO SLIDER</a> 
+    </li>
+    </ul>
+    <!--sub menu step-->
+    
+    <!--sub menu step-->
+    <li class="menu-expand menu-sibling"> 
+    <a href="#" target="_top">VIDEOS<span class="ard"></span></a>
+    <ul class="">
+    <!--menu step-->
+    
+    <!--sub menu step--> 
+    <li class="menu-first"> 
+    <a href="video_youtube.html" target="_top">FULL HTML YOUTUBE</a> 
+    </li>
+    <!--sub menu step-->
+    
+    <!--sub menu step--> 
+    <li class=""> 
+    <a href="video_embedded.html" target="_top">FULL HTML5 VIDEO</a> 
+    </li>
+    </ul>
+    <!--sub menu step-->
+    
+    <!--menu step-->
+    <li class="menu-sibling menu-last">  
+    <a href="#" target="_top">CONTACT<span class="ard"></span></a>
+    <ul class="">
+    <!--menu step-->
+    
+    <!--sub menu step--> 
+    <li class="menu-first"> 
+    <a href="contact.html" target="_top">FULL MAP GREYSTYLE</a> 
+    </li>
+    <!--sub menu step-->
+    
+    <!--sub menu step--> 
+    <li class="menu-first"> 
+    <a href="contact_standard.html" target="_top">FULL MAP STANDARD</a> 
+    </li>
+    <!--sub menu step-->
+    
+    <!--sub menu step-->    
+    <li class=""> 
+    <a href="contact_left_content.html" target="_top">FULL MAP LEFT FORM</a> 
+    </li>
+    </ul>
+    <!--sub menu step-->
+    <!--menu-->
+    
+    </div>
+    </div>
+    </div>
+    <div id="end"></div>
+    </div>
+    <!--menu-->
+    
+    <!--social bookmark-->
+    <div id="buttons"></div><!--"buttons-expanded"><!--hide/show socials-->
+    <!--social bookmark-->
+    
+    <!--footer-->
+    <div id="footerSlideContainer">
+    <div id="footerSlideText">
+    </div>   
+    <div id="look"></div>
+    <div id="footerSlideButton"></div>
+    <div id="footerSlideContent">
+    
+    <!--footer content-->
+    <div class="copy_footer">
+    <div class="footer_copy">
+    <p class="copyrights">
+    &copy; 2013 SEVEN MEDIA. All Rights Reserved. <a href="http://themeforest.net/user/sevenmedia" target="_blank" class="link_copy" > ThemeForest</a></p>
+    </div>
+    
+    <!-- Tweets -->
+    <div class="footer_tweet">
+    <div class="tweet"></div>  
+    <!-- Tweets -->
+    <!--footer content-->
+    
+    </div>
+    </div>
+    </div>
+    </div>
+    <!--footer-->
+    
+    <!--audio-->
+    <audio id="mybgplayer">
+    <!--<source src="audio/New_Day.mp3" type="audio/mpeg">
+    <source src="audio/New_Day.ogg" type="audio/ogg">-->
+    <source src="audio/Holiday_Mood.mp3" type="audio/mpeg">
+    <source src="audio/Holiday_Mood.ogg" type="audio/ogg">
+    </audio>
+    
+    <div id="mybgplayerui" class="bgplayerui">
+    <img class="play" src="img/play.png" data-pausesrc="img/pause_hover.png"><img src="img/back.png" class="rewind"> <div class="volume">
+    </div>
+    </div>
+    <!--audio-->
+    
+    </body>
+    </html>

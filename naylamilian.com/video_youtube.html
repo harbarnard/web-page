@@ -1,0 +1,258 @@
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Arturo Creative Portfolio</title>
+    <meta name="Description" content="Lorem ipsum doret atem">
+    <meta name="Keywords" content="Lorem, Ipsum, Doret, Atem">
+
+    <link rel="stylesheet" type="text/css" href="css/screen.css">
+    <link rel="stylesheet" type="text/css" href="css/youtube.css">
+    
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/Smirnof_400.font.js"></script>
+    <script type="text/javascript" src="js/swfobject.js"></script>
+    <script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+    
+    <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+        
+    <script type="text/javascript" src="js/video/jquery.videoGallery.min.js"></script>
+    <script type="text/javascript" src="js/video/jquery.apPlaylistManager.min.js"></script> 
+        
+    <script type="text/javascript" src="js/youtube/jquery.apYoutubePlayer.min.js"></script>  
+    <script type="text/javascript" src="js/youtube/spry_youtube.js" ></script>
+    <script type="text/javascript" src="js/youtube/video_youtube.js"></script> 
+       
+    <script type="text/javascript" src="js/jsShare.js"></script>
+    <script type="text/javascript" src="js/spryfunction.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+
+    </head>
+    <body>
+    
+    <!-- wrapper for the whole component -->
+    <div id="componentWrapper">
+    <div class="mediaWrapper">
+    <!-- flash embed part -->   
+    
+    <div id="flashPreview">
+    <a href="http://www.adobe.com/go/getflashplayer">
+    <img src="../../wwwimages.adobe.com/www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+    </a>
+    </div>
+    <!-- local video holder -->
+    <div class="videoHolder"></div>
+    <!-- player bg -->
+    <div class="player_bg"></div>
+    <!-- preview image holder -->
+    <div class="previewHolder"></div>
+    <!-- youtube holder -->
+    <div class="youtubeHolder"></div>
+    
+    <!-- seekbar -->
+    <div class="seekbar">
+    <div class="seekbar_hit"></div>
+    <div class="load_progress"></div>
+    <div class="play_progress"></div>
+    </div>
+    
+    <div class="controls_vol_fs">
+    <!-- no fullscreen in all browsers! -->
+    <div class="controls_fullscreen"></div>
+    <!-- no volume on mobile! -->
+    <div class="controls_volume">
+    <div class="volume_toggle"></div>
+    <div class="volume_seekbar">
+    <div class="volume_level"></div>
+    </div>
+    </div>
+    </div>
+    
+    <!-- big play button for media -->
+    <div class="big_play"></div>
+    </div>
+    
+    <!-- playlist data (hidden) -->
+    <!--edit the video on youtube, (only QLluxHOOXSw) www.youtube.com/watch?v=QLluxHOOXSw -->
+    
+    <div class="componentPlaylist">
+    <ul id='playlist1' 
+    data-address="playlist1">
+    <li data-address="youtube_single1" 
+    class='playlistItem' 
+    data-type='youtube_single' 
+    data-path="QLluxHOOXSw" 
+    data-aspectRatio='2' 
+    data-width="1280" 
+    data-height="720" >
+    </li>
+    </ul>                
+    </div>
+    
+    <!-- media preloader -->
+    <div class="mediaPreloader"></div> 
+    </div>
+    
+    <!--top bar-->
+    <div id="header_line"></div>
+    <!--top bar-->
+    
+    <!--menu-->
+    <div id="pos1">
+    <div id="menu_pos">
+    <div id="home_button">
+    
+    <!--menu step-->
+    <div id="home_link" class="menu"><a href="index.html" target="_top">HOME</a></div>
+    </div>
+    <!--menu step-->
+    
+    <!--logo-->
+    <div id="logo_bg"> <a href="index.html"><img src="img/logo.png" class="displayed"></a>
+    <div id="logo_name">ARTURO</div>
+    </div>
+    <!--logo-->
+    
+    <div id="menu_items">
+    <div id="nav" class="clearfix">
+    <ul id="header_menu" class="menu">
+    
+    <!--menu step-->
+    <li class="menu-expand menu-sibling menu-first"> 
+    <a href="#" target="_top">PAGES<span class="ard"></span></a>
+    <ul/>
+    <!--menu step-->
+    
+    <!--sub menu step--> 
+    <li class="menu-first"> 
+    <a href="about_us.html" target="_top">ABOUT US</a> 
+    </li>
+    <!--sub menu step-->
+    
+    <!--sub menu step--> 
+    <li class="menu-first"> 
+    <a href="team.html" target="_top">TEAM</a>
+    </li>
+    <!--sub menu step-->
+    
+    <!--sub menu step-->
+    <li class="menu-first"> 
+    <a href="#" target="_top">FEATURES</a> </li>
+    </ul>
+    </li>
+    <!--sub menu step-->
+    
+    <!--sub menu step-->
+    <li class="menu-expand menu-sibling"> 
+    <a href="#" target="_top">GALLERY<span class="ard"></span></a>
+    <ul class="">
+    <!--menu step-->
+    
+    <!--sub menu step--> 
+    <li class="menu-first"> 
+    <a href="gallery_full.html" target="_top">FULL GALLERY</a> 
+    </li>
+    <!--sub menu step-->
+    
+    <!--sub menu step--> 
+    <li class="menu-first"> 
+    <a href="gallery_one.html" target="_top">THUMB GALLERY</a> 
+    </li>
+    <!--sub menu step-->
+    
+    <!--sub menu step--> 
+    <li class=""> 
+    <a href="gallery_slider.html" target="_top">IMAGE/VIDEO SLIDER</a> 
+    </li>
+    </ul>
+    <!--sub menu step-->
+    
+    <!--sub menu step-->
+    <li class="menu-expand menu-sibling"> 
+    <a href="#" target="_top">VIDEOS<span class="ard"></span></a>
+    <ul class="">
+    <!--menu step-->
+    
+    <!--sub menu step--> 
+    <li class="menu-first"> 
+    <a href="video_youtube.html" target="_top">FULL HTML YOUTUBE</a> 
+    </li>
+    <!--sub menu step-->
+    
+    <!--sub menu step--> 
+    <li class=""> 
+    <a href="video_embedded.html" target="_top">FULL HTML5 VIDEO</a> 
+    </li>
+    </ul>
+    <!--sub menu step-->
+    
+    <!--menu step-->
+    <li class="menu-sibling menu-last">  
+    <a href="#" target="_top">CONTACT<span class="ard"></span></a>
+    <ul class="">
+    <!--menu step-->
+    
+    <!--sub menu step--> 
+    <li class="menu-first"> 
+    <a href="contact.html" target="_top">FULL MAP GREYSTYLE</a> 
+    </li>
+    <!--sub menu step-->
+    
+    <!--sub menu step--> 
+    <li class="menu-first"> 
+    <a href="contact_standard.html" target="_top">FULL MAP STANDARD</a> 
+    </li>
+    <!--sub menu step-->
+    
+    <!--sub menu step-->    
+    <li class=""> 
+    <a href="contact_left_content.html" target="_top">FULL MAP LEFT FORM</a> 
+    </li>
+    </ul>
+    <!--sub menu step-->
+    <!--menu-->
+    
+    </div>
+    </div>
+    </div>
+    <div id="end"></div>
+    </div>
+    <!--menu-->
+    
+    <!--social bookmark-->
+    <div id="buttons"></div><!--"buttons-expanded"><!--hide/show socials-->
+    <!--social bookmark-->
+    
+    <!--footer-->
+    <div id="footerSlideContainer">
+    <div id="footerSlideText">
+    </div>   
+    <div id="look"></div>
+    <div id="footerSlideButton"></div>
+    <div id="footerSlideContent">
+    
+    <!--footer content-->
+    <div class="copy_footer">
+    <div class="footer_copy">
+    <p class="copyrights">
+    &copy; 2013 SEVEN MEDIA. All Rights Reserved. <a href="http://themeforest.net/user/sevenmedia" target="_blank" class="link_copy" > ThemeForest</a></p>
+    </div>
+    
+    <!-- Tweets -->
+    <div class="footer_tweet">
+    <div class="tweet"></div>  
+    </div>
+    <!-- Tweets -->
+    <!--footer content-->
+    
+    </div>
+    </div>
+    </div>
+    <!--footer-->
+    
+    </body>
+    </html>
