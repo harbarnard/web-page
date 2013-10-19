@@ -1,0 +1,219 @@
+/*general*/
+#main-flexslider .container 			{padding:0;
+										background:0;}
+						
+#main-flexslider ul li.slide img 		{-moz-border-radius:0;
+										-webkit-border-radius:0;
+										border-radius:0;}
+
+
+
+/*remove margin from list*/
+#main-flexslider ul li.slide	{margin:0;position:relative;}
+
+/* FlexSlider Default Theme*/
+#main-flexslider 				{margin:0!important; 
+								background:#fff; 
+								border:0; 
+								position: relative; 
+								-webkit-border-radius:0; 
+								-moz-border-radius:0; 
+								-o-border-radius:0; 
+								border-radius:0; 
+								box-shadow:none; 
+								-webkit-box-shadow:none; 
+								-moz-box-shadow:none; 
+								-o-box-shadow:none;}
+
+
+.flex-viewport 					{max-height:2000px; 
+								-webkit-transition:none; 
+								-moz-transition:none; 
+								transition:none;}
+								
+								
+.loading .flex-viewport 		{max-height:300px;}
+#main-flexslider .slides 		{}
+
+
+
+
+
+/* Direction Nav */
+#main-flexslider .flex-direction-nav li			{margin:0;
+												float:left!important;}
+
+#main-flexslider .flex-direction-nav			{display:block;
+												width:89px;
+												height:44px;
+												position:absolute;
+												right:0;
+												bottom:0;}	
+																		
+#main-flexslider .flex-direction-nav a 			{width:44px;
+												height:44px;
+												display:block;
+												background: url(images/slider-nav-bg.png) no-repeat left top!important; 
+												position:relative!important;
+												bottom:0;
+												margin:0; 
+												cursor:pointer; 
+												text-indent:-9999px; 
+												opacity:1!important; 
+												-webkit-transition:none;}
+												
+#main-flexslider .flex-direction-nav	{}
+#main-flexslider .flex-direction-nav .flex-next 		{background-position:right top!important;
+														right:0!important}
+														
+#main-flexslider .flex-direction-nav .flex-prev 		{left:0!important;
+														margin-right:1px;}
+
+#main-flexslider .flex-direction-nav a:hover			{background-position:left bottom!important;}
+#main-flexslider .flex-direction-nav .flex-next:hover	{background-position:right bottom!important;}
+
+
+
+
+
+/* Control Nav */
+#main-flexslider .flex-control-nav				{width:100%;
+												position:absolute;
+												bottom:10px;
+												right:20px;
+												text-align:center;}
+
+#main-flexslider .flex-control-paging li a 		{text-indent:-9999px;
+												overflow:hidden;
+												background:url(images/caption-bg.png);
+												opacity:0.6;}
+												
+#main-flexslider .flex-control-paging li a:hover,
+#main-flexslider .flex-control-paging li a.flex-active			{background:url(images/caption-bg.png);
+																opacity:1;}
+
+
+
+
+
+/*caption style*/
+#main-flexslider ul li .caption						{position:absolute;
+													left:0;
+													width:96%;
+													color:#fff;
+													padding:0 2%;}
+
+#main-flexslider ul li .caption .slide-title		{line-height:normal!important;
+													margin:0 0 10px 0;
+													padding:0;
+													color:#fff;}
+												
+#main-flexslider ul li .caption .slide-sub-title	{line-height:normal!important;
+													margin:0 0 10px 0;
+													padding:0;
+													color:#fff;}
+
+#main-flexslider ul li .caption .slide-desc			{padding:0;}
+
+
+#main-flexslider ul li .caption .slide-link			{line-height:37px;}
+
+
+/*caption background*/
+#main-flexslider ul li .caption-bg .slide-title,
+#main-flexslider ul li .caption-bg .slide-sub-title,
+#main-flexslider ul li .caption-bg .slide-desc				{background:url(images/caption-bg.png);
+															color:#fff!important;}
+
+
+#main-flexslider ul li .caption-bg .slide-title,
+#main-flexslider ul li .caption-bg .slide-sub-title			{padding:3px 15px;
+															margin-bottom:5px;}
+															
+#main-flexslider ul li .caption-bg .slide-desc				{padding:15px;}
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	Custom style for slides on home page
+/*-----------------------------------------------------------------------------------*/
+/*slide 1*/
+#main-flexslider ul li#slide1 .caption							{top:20%;}
+
+#main-flexslider ul li#slide1 .caption .container-inner			{width:50%;
+																float:right;}
+																
+#main-flexslider ul li#slide1 .caption .slide-title				{font-size:52px;
+																color:#454545;}
+																
+#main-flexslider ul li#slide1 .caption .slide-sub-title			{font-size:24px;}
+
+#main-flexslider ul li#slide1 .caption .slide-desc				{color:#808080;}
+
+
+
+
+
+/*slide 2*/
+#main-flexslider ul li#slide2 .caption							{top:25%;}
+
+#main-flexslider ul li#slide2 .caption .container-inner			{width:45%;
+																float:right;}
+																
+#main-flexslider ul li#slide2 .caption .slide-title				{font-size:32px;}
+																
+#main-flexslider ul li#slide2 .caption .slide-sub-title			{font-size:18px;}
+
+#main-flexslider ul li#slide2 .caption .slide-desc				{}
+
+
+
+
+/*slide 3*/
+#main-flexslider ul li#slide3 .caption							{top:20%;}
+
+#main-flexslider ul li#slide3 .caption .container-inner			{width:45%;
+																float:left;}
+																
+#main-flexslider ul li#slide3 .caption .slide-title				{font-size:52px;}
+																
+#main-flexslider ul li#slide3 .caption .slide-sub-title			{font-size:24px;}
+
+#main-flexslider ul li#slide3 .caption .slide-desc				{}
+
+
+
+
+
+/*slide 4*/
+#main-flexslider ul li#slide4 .caption							{top:40%;}
+
+#main-flexslider ul li#slide4 .caption .container-inner			{width:45%;
+																float:right;}
+																
+#main-flexslider ul li#slide4 .caption .slide-title				{font-size:32px;}
+																
+#main-flexslider ul li#slide4 .caption .slide-sub-title			{}
+
+#main-flexslider ul li#slide4 .caption .slide-desc				{}
+
+
+
+
+/*slide 5*/
+#main-flexslider ul li#slide5 .caption							{top:70%;}
+
+#main-flexslider ul li#slide5 .caption .container-inner			{width:65%;
+																float:left;}
+																
+#main-flexslider ul li#slide5 .caption .slide-title				{font-size:37px;}
+																
+#main-flexslider ul li#slide5 .caption .slide-sub-title			{}
+
+#main-flexslider ul li#slide5 .caption .slide-desc				{}
